@@ -47,6 +47,7 @@ linear_est = tf.estimator.LinearClassifier(feature_columns = feature_columns)
 linear_est.train(train_input_fn)
 result = linear_est.evaluate(eval_input_fn)
 
+#Evaluation of model
 clear_output()
 print(result['accuracy'])
 print(result)
